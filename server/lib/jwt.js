@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 
+
 export const generateToken = ( payload, res ) => {
     const token = jwt.sign( payload, process.env.JWT_SECRET , {
         expiresIn: "3d"
@@ -7,7 +8,7 @@ export const generateToken = ( payload, res ) => {
     res.cookie("token", token, {
         maxAge: 3 * 24 * 60 * 60 * 1000, // 3 days
         httpOnly: true,
-        sameSite: 'strict',
+        sameSite: 'none',
         secure: process.env.NODE_ENV != 'dev'
     })
 }
