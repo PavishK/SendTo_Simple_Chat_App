@@ -179,23 +179,43 @@ npm run dev
 
 # 🖼 Application Preview
 
-(Add your images below)
-
-```md
 ## 🔐 Login Page
-![Login Image Here](IMAGE_LINK_HERE)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b17000a2-b598-43b4-a293-1fcce458dd16" width="900"/>
+</p>
+
+---
+
+## 📝 Register Page
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e60f9e15-13b2-4686-aeeb-a44cd32425d1" width="900"/>
+</p>
+
+---
 
 ## 💬 Chat Interface
-![Chat Image Here](IMAGE_LINK_HERE)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/77c5cead-bd48-4f81-ab71-bde7efe8baa4" width="900"/>
+</p>
+
+---
 
 ## 👤 Profile Picture Update
-![Profile Image Here](IMAGE_LINK_HERE)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c6d83dd9-e8c6-4543-9854-2012e45423a3" width="900"/>
+</p>
+
+---
 
 ## 🎨 Themes (Dark / Light / Cyberpunk / Coffee / Retro)
-![Themes Image Here](IMAGE_LINK_HERE)
-```
 
-Replace `IMAGE_LINK_HERE` with your uploaded image URL or GitHub image path.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4c954ade-b6a1-4af1-896c-d096b59c5d56" width="900"/>
+</p>
 
 ---
 
