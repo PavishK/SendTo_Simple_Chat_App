@@ -2,12 +2,10 @@ import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore.js";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
-import { EyeOffIcon, KeyIcon, LockIcon, MailIcon, MessageCircleIcon, User2Icon } from "lucide-react";
+import { LockIcon, MailIcon, SendIcon } from "lucide-react";
 import Loader from '../components/Loader.jsx';
-import toast from "react-hot-toast";
 
 const Login = () => {
-  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -36,7 +34,7 @@ const Login = () => {
                 className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20
               transition-colors"
               >
-                <MessageCircleIcon className="w-6 h-6 text-primary" />
+                <SendIcon className="w-6 h-6 text-primary" />
               </div>
               <h1 className="text-2xl font-bold mt-2">Welcome Back</h1>
               <p className="text-base-content/60">Sign in to your account</p>
@@ -97,7 +95,7 @@ const Login = () => {
             <p className="text-base-content/60">
               Don&apos;t have an account?{" "}
               <Link to="/register" className="link link-primary">
-                Create account
+                Sign up
               </Link>
             </p>
           </div>

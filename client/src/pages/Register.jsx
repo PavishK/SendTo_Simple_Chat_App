@@ -1,9 +1,8 @@
-import { EyeIcon, EyeOffIcon, Loader2, LockIcon, MailIcon, MessageCircleIcon, UserIcon } from 'lucide-react';
-import React, { useState } from 'react';
+import { LockIcon, MailIcon, SendIcon, UserIcon } from 'lucide-react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuthStore } from '../store/useAuthStore.js';
 import AuthImagePattern from '../components/AuthImagePattern.jsx';
-import toast from 'react-hot-toast';
 import Loader from '../components/Loader.jsx';
 
 function Register() {
@@ -13,7 +12,6 @@ function Register() {
     password: "",
     profilepic: ""
   });
-  const [ showPassword, setShowPassword ] = useState(false);
   const { register, isRegistering } = useAuthStore();
 
   const handleInputChange = (e) => {
@@ -39,7 +37,7 @@ function Register() {
                 className="size-12 rounded-xl bg-primary/10 flex items-center justify-center 
               group-hover:bg-primary/20 transition-colors"
               >
-                <MessageCircleIcon className="size-6 text-primary" />
+                <SendIcon className="size-6 text-primary" />
               </div>
               <h1 className="text-2xl font-bold mt-2">Create Account</h1>
               <p className="text-base-content/60">Get started with your free account</p>
@@ -126,7 +124,7 @@ function Register() {
                   Loading...
                 </>
               ) : (
-                "Create Account"
+                "Sign up"
               )}
 
             </button>

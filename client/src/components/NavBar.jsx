@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
-import { LogOutIcon, MessageCircleIcon, PaintRollerIcon, SidebarCloseIcon, SidebarOpenIcon, UserIcon } from "lucide-react";
+import { LogOutIcon, SendIcon, PaintRollerIcon, SidebarCloseIcon, SidebarOpenIcon, UserIcon } from "lucide-react";
 import { useChatStore } from "../store/useChatStore.js";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="flex items-center gap-8">
             <NavLink to="/home" className="flex items-center gap-2.5 hover:opacity-80 transition-all">
               <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                <MessageCircleIcon className="w-5 h-5 text-primary" />
+                <SendIcon className="w-5 h-5 text-primary" />
               </div>
               <h1 className="text-lg font-bold">SendTo</h1>
             </NavLink>
